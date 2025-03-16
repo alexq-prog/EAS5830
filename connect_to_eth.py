@@ -14,7 +14,7 @@ def connect_to_eth():
 	url = "https://mainnet.infura.io/v3/ee7eecd6a4ce48deb23f9f5084906d19"  # FILL THIS IN
 	w3 = Web3(HTTPProvider(url))
 	assert w3.is_connected(), f"Failed to connect to provider at {url}"
-	print(w3.eth.get_block('latest'))
+	# print(w3.eth.get_block('latest'))
 	return w3
 
 
